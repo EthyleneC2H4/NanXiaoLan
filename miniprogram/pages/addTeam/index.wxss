@@ -1,0 +1,86 @@
+view, scroll-view, block, input, button, text, image, video, canvas {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  color: inherit;
+  font-style: inherit;
+  line-height: inherit; }
+
+input {
+  width: 100%;
+  display: block;
+  height: 70rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 6rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  color: #555; }
+
+.button {
+  height: 70rpx;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background: #fa8c35;
+  font-size: 30rpx;
+  color: #fff;
+  border-radius: 6rpx; }
+
+.reg {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .reg > .h1 {
+    margin-bottom: 5vh;
+    color: #000;
+    font-size: 50rpx;
+    font-weight: bold; }
+  .reg > image {
+    width: 700rpx;
+    margin-bottom: 30rpx; }
+  .reg > .p {
+    display: flex;
+    align-items: center;
+    width: 700rpx;
+    color: #999;
+    font-size: 30rpx;
+    margin-bottom: 30rpx; }
+    .reg > .p > input {
+      width: 100%;
+      flex: 1; }
+    .reg > .p .reg-code {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20rpx;
+      height: 70rpx;
+      margin-left: 10rpx;
+      margin-bottom: 30rpx;
+      background: #999;
+      color: #ccc;
+      text-decoration: line-through;
+      font-size: 26rpx; }
+    .reg > .p > .button {
+      margin-bottom: 0;
+      margin-left: auto;
+      width: 200rpx; }
+    .reg > .p radio {
+      margin-left: 30rpx; }
+  .reg input {
+    width: 700rpx;
+    margin-bottom: 30rpx; }
+  .reg .button {
+    margin-bottom: 30rpx;
+    width: 700rpx; }
+    .reg .button + .button {
+      background: #fff;
+      border: 2rpx solid #fa8c35;
+      color: #fa8c35; }

@@ -1,0 +1,5 @@
+<!--pages/game/create_match.wxml-->
+<image class="image" style="opacity: {{0.75}};" src="/images/pk.jpg" mode="scaleToFill"></image>
+<text>\n\n\n\n\n\n\n\n\n\n\n</text>
+<button class="button_set" style=" display: inline-block; background-color: lightgrey;height: 10vh; width: 45vw; padding-top: 13px; font-size: larger;" bindtap="create_match"> 创建比赛</button>
+  

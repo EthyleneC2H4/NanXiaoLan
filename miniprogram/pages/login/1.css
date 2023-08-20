@@ -1,0 +1,62 @@
+view, scroll-view, block, input, button, text, image, video, canvas {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  color: inherit;
+  font-style: inherit;
+  line-height: inherit; }
+
+input {
+  width: 100%;
+  display: block;
+  height: 70rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 6rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  color: #555; }
+
+.button {
+  height: 70rpx;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background: #fa8c35;
+  font-size: 30rpx;
+  color: #fff;
+  border-radius: 6rpx; }
+
+.loginWx {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .loginWx > .h3 {
+    margin-bottom: 100rpx;
+    font-size: 30rpx;
+    color: #000; }
+  .loginWx > .i {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    border: 5rpx solid #ccc;
+    font-size: 100rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    margin-bottom: 30rpx; }
+  .loginWx .button {
+    margin-bottom: 30rpx;
+    width: 700rpx; }
+    .loginWx .button + .button {
+      background: #fff;
+      border: 2rpx solid #fa8c35;
+      color: #fa8c35; }

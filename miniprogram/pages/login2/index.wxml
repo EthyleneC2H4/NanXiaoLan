@@ -1,0 +1,9 @@
+
+<view class="index">
+	<view class="h3">登录</view>
+	<input placeholder="账号" value="{{acc}}" bindchange="vmodel" data-k='acc' />
+	<input placeholder="密码" value="{{pwd}}" bindchange="vmodel" data-k='pwd' type="password" />
+	<view class="button" bindtap="sub">登录</view>
+  <button class="signup" bindtap="signup" type="primary">注册</button>
+  
+</view>

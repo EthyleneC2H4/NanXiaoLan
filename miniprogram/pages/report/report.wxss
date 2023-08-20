@@ -1,0 +1,82 @@
+.MyNavigator{
+  position: fixed;
+  z-index: 10;
+  height: 140rpx;
+  width: 100%;
+  background-color: #fa8c35;
+  text-align: center;
+  line-height: 180rpx;
+  font-size: 34rpx;
+  font-weight: 550;
+  border: solid 2rpx #a9a9ad;
+}
+
+.takeplace{
+  height: 140rpx;
+  width: 100%;
+}
+
+.ReportNavigator{
+  position: relative;
+  display: block;
+  height: 88rpx;
+  background-color: white;
+  border: solid 2rpx #efeff3;
+}
+
+
+.game-item{
+  display: flex;
+  height: 310rpx;
+  border: solid 1px #eeeeef;
+  text-align: justify;
+}
+
+.game-item-left{
+  height: 310rpx;
+  width: 33.3333%;
+}
+
+.game-item-mid{
+  width: 33.3333%;
+  height: 310rpx;
+  text-align: center;
+}
+
+.game-item-right{
+  width: 33.3333%;
+  height: 310rpx;
+  text-align: center;
+}
+
+.mid-state{
+  display: block;
+  font-size: normal;
+  font-weight: 400;
+  text-align: center;
+  color: grey;
+}
+
+.mid-score{
+  display: block;
+  margin-top: 25rpx;
+  font-size: xx-large;
+  font-weight: 550;
+}
+
+.team_pic{
+  display: block;
+  margin-top: 50rpx;
+  margin-left: 15%;
+  width: 150rpx;
+  height: 200rpx;
+}
+
+.team_name{
+  display: block;
+  margin-top: 20rpx;
+  font-size: larger;
+  width: 100%;
+  text-align: center;
+  line-height: 20rpx;
+}

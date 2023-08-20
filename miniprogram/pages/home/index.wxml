@@ -1,0 +1,8 @@
+<view class="MyNavigator">
+  <text>南小篮</text>
+</view>
+<view class="home">
+	<image src="{{ userInfo.avatarUrl }}" mode="aspectFill" />
+	<view class="p">欢迎登录: {{userInfo.nickName}}</view>
+	<view class="button" bindtap='logout'>退出</view>
+</view>

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/login2/index",
+    "pages/team/index",
+    "pages/home/index",
+    "pages/addTeam/index",
+    "pages/game/game",
+    "pages/report/report",
+    "pages/mine/mine",
+    "pages/signUp/index",
+    "pages/create_team1/team1",
+    "pages/create_team2/team2"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fa8c35",
+    "navigationBarTitleText": "南小篮",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#333",
+    "selectedColor": "#fa8c35",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
+      },
+      {
+        "text": "比赛中心",
+        "pagePath": "pages/game/game",
+        "iconPath": "images/game.jpg",
+        "selectedIconPath": "images/game-active.jpg"
+      },
+      {
+        "text": "球队",
+        "pagePath": "pages/team/index",
+        "iconPath": "images/team.png",
+        "selectedIconPath": "images/team-active.jpg"
+      },
+      {
+        "text": "战报",
+        "pagePath": "pages/report/report",
+        "iconPath": "images/report.jpeg",
+        "selectedIconPath": "images/report-active.png"
+      }
+    ],
+    "position": "bottom",
+    "usingComponents": {},
+    "backgroundTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

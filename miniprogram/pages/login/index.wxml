@@ -1,0 +1,5 @@
+<view class="loginWx">
+	<view class="i">?</view>
+	<view class="h3">需要登录才可以访问</view>
+	<button open-type="getUserInfo" class="button" bindgetuserinfo="getUserInfo" lang="zh_CN">登录</button>
+</view>

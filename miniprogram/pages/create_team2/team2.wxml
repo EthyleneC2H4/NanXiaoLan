@@ -1,0 +1,63 @@
+<!--pages/game/game.wxml-->
+<image class="image1" style="opacity: {{0.1}};" src="/images/team1.jpg" mode="scaleToFill"></image>
+<button bindtap="createGame">创建比赛</button>
+<!--pages/team/team.wxml-->
+<view class="ReportNavigator">
+  <view class="BottomBox">
+    <view wx:if= "{{TopActive === 0}}" class="ShowBox1_T" >
+      <text style = "color: black;">队伍(1)</text>
+    </view>
+
+  <view wx:if = "{{TopActive === 0}}" class="ShowBox2_F" bindtap="ChangeActive">
+    <text style="color:#b8b8b9;">队伍(2)</text> 
+  </view>
+
+  <view wx:if = "{{TopActive === 1}}" class="ShowBox2_T">
+  <text style="color: black;">队伍(2)</text>
+  </view>
+
+  <view wx:if="{{TopActive === 1 }}" class="ShowBox1_F" bindtap="ChangeActive" >
+  <text style="color:#b8b8b9;"> 队伍(1) </text>
+  </view>
+  
+  </view>
+</view>
+
+<view class = "font_position">
+  <view class = "font_setting">请在下方输入队伍信息\n </view>
+</view>
+<text class="font_setting2">\n{{team_number}}</text> 
+
+
+<view class="container">
+    <view class="exam-item">
+      <view class="item-text">选择队伍</view>
+      <view class="item-content" style="background-color:rgb(233, 233, 233);" bindtap="get_team"  bindtap="showModal">{{areaCode}}</view>
+<!--dialog隐藏区域  -->
+      <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+            <view class="modals-cancel" bindtap="hideModal"></view>
+            <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+
+                <view class="dialog-title">选择队伍</view>
+                <view class="dialog-box">
+                    <view bindtap="change"  wx:for="{{task}}" wx:key="index"
+                    class="dialog-item {{index==indexstatus?'bg-blue':''}}"
+                    data-dialogid="{{index}}" bindtap="getValueTap">{{item.name}}</view>
+                </view>
+                <view class="button dialog-btn">
+                    <button id="confirm" bindtap="hideModal">确定</button>
+                </view>
+            </view>
+        </view>
+
+    </view>
+</view>
+<form bindreset="foo">
+<text class="message">\n {{wel_number}}</text>
+<input id = "up_input" style='margin-top: 40rpx; ' placeholder="请输入您的得分"  bindinput="bindKeyInputId_1"/>
+
+<text class="message">\n 比赛时间 </text>
+<input id = "up_input" style='margin-top: 40rpx; ' placeholder="请输入时间"  bindinput="bindKeyInputId_2"/>
+<text>\n</text>
+<button form-type="reset" style="height: 10vh; width: 35vw; background-color: lightgray; padding-top: 13px;" bindtap = "change_name" class="wai"> {{load.name}}</button>
+</form>

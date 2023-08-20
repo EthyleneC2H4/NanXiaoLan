@@ -1,0 +1,11 @@
+<!--pages/signUp/index.wxml-->
+<form bindsubmit="sign">
+<text class="h3">注册</text>
+<view>用户名</view>
+<input name="acc" placeholder="请输入用户名" bindinput="addAccount"></input>
+<view>密码</view>
+<input name="pwd" placeholder="请输入密码" bindinput="addPassword"></input>
+<button  class="button" type="primary" form-type="submit">注册</button>
+<view></view>
+<button class="button" type="primary" form-type="reset">清空</button>
+</form>

@@ -1,0 +1,10 @@
+<view class="reg">
+	<view class="h1">创建球队</view>
+	<input placeholder="队名" value="{{name}}" bindchange="vmodel" data-k='name' />
+	<input placeholder="编号" value="{{idcard}}" bindchange="vmodel" data-k='idcard' />
+	<input placeholder="队员信息" value="{{member}}" bindchange="vmodel" data-k='member' />
+	<input placeholder="联系电话" value="{{phone}}" bindchange="vmodel" data-k='phone' />
+	<view class="p">队徽<view class="button" bindtap="chooseImg">选择图片</view></view>
+	<image wx:if="{{img}}" src="{{img}}" mode="widthFix" ></image>
+	<view class="button" bindtap="add">创建球队</view>
+</view>

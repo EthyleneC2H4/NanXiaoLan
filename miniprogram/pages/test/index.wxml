@@ -1,0 +1,10 @@
+<!--pages/test/index.wxml-->
+<input placeholder="输入名字" bindinput='addName'></input>
+<input placeholder="输入年龄" bindinput="addAge"></input>
+<button bindtap="addData" type="primary">添加信息</button>
+<button bindtap="getData" type="primary">查询信息</button>
+
+<input placeholder="输入id" bindinput='addID'></input>
+<button bindtap="deleteData" type="primary">删除信息</button>
+<button bindtap="getopenid" type="primary">getopenid</button>
+<button bindtap="login" type="primary">获取用户登录</button>

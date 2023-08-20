@@ -1,0 +1,26 @@
+<view class="MyNavigator">
+  <text>友谊赛</text>
+</view>
+
+<view class="takeplace"></view>
+  <block wx:for="{{gameList.data}}" wx:key="_id" wx:for-item="game">
+    <block wx:for="{{teamList.data}}" wx:key="_id"  wx:for-item="team1" wx:if="{{game.team1 === team1._id}}">
+        <block wx:for="{{teamList.data}}" wx:key="_id" wx:for-item="team2" wx:if="{{game.team2 === team2._id}}">
+          <view class="game-item">
+            <view class="game-item-left">
+              <image class="team_pic" src="{{team1.img}}" mode="heightFix"/>
+              <text class="team_name">{{team1.name}}</text>
+            </view>
+            <view class="game-item-mid">
+              <text class="mid-state">{{game.date}}</text>
+              <text class="mid-score">{{game.score1}}  -  {{game.score2}}</text>
+            </view>
+            <view class="game-item-right">
+              <image class="team_pic" src="{{team2.img}}" mode="heightFix"/>
+              <text class="team_name">{{team2.name}}</text>
+            </view>
+          </view>
+        </block>
+    </block>
+  </block>
+

@@ -1,0 +1,221 @@
+/* pages/game/game.wxss*/
+.font_setting{
+  color:black;
+  font-family:sans-serif;
+  font-weight: bold;
+  font-size:x-large;
+  text-align: center;
+  width:auto;
+  height: auto;
+}
+.font_setting2{
+  color:gray;
+  font-family:sans-serif;
+  font-weight: bold;
+  font-size:x-large;
+  text-align: center;
+  width:auto;
+  height: auto;
+}
+
+.font_postion{
+  display:inline;
+  justify-self: start;
+}
+.publish::after{
+  border: 0;
+}
+.message{
+  text-align:inherit;
+  font-size: larger;
+  color: black;
+}
+.publish{
+  display: inline;
+  color: black;
+  background-color:lightgray;
+}
+.wai{
+  font-size: larger;
+}
+.BottomBox{
+  display: block;background-color:
+  #eeeeef;
+  width: 716rpx;
+  height: 68rpx;margin-top: 10rpx;margin-left:2%;
+  border-radius:24rpx;text-align: center;font-weight: 550;
+}
+.ShowBox1_T{
+    display: block;
+    position:absolute;
+    margin-top: 4rpx;
+    margin-left: 4rpx;
+    width: 355rpx;
+    height: 56rpx;
+    background-color: white;
+    border-radius: 24rpx;
+    border: solid 2rpx #eeeeef;
+}
+  
+.ShowBox1_F{
+    display: block;
+    position:absolute;
+    margin-top: 4rpx;
+    margin-left: 4rpx;
+    width: 355rpx;
+    height: 56rpx;
+    border-radius: 24rpx;
+    border: solid 2rpx #eeeeef;
+}
+  
+.ShowBox2_T{
+    display: block;
+    position:absolute;
+    margin-left: 360rpx;
+    margin-top: 4rpx;
+    width: 355rpx;
+    height: 56rpx;
+    border-radius: 24rpx;
+    background-color: white;
+    border: solid 2px #eeeeef;
+}
+  
+.ShowBox2_F{
+    display: block;
+    position:absolute;
+    margin-left: 360rpx;
+    margin-top: 4rpx;
+    width: 355rpx;
+    height: 56rpx;
+    border-radius: 24rpx;
+    border: solid 2px #eeeeef;
+}
+.image1{
+  display: inline-block;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: absolute;
+}
+.item-text {
+  font-size: 40rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 120rpx;
+  color: black;
+  margin-right: 20rpx;
+  /* width: 18%; */
+}
+.item-content {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 80rpx;
+  color: #041320;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0rpx 0rpx;
+}
+.exam-item {
+  opacity: 1;
+  border-radius: 4px;
+  width: 100%;
+  /* margin: 20rpx auto; */
+  box-sizing: border-box;
+  padding: 0rpx 0rpx;
+  height: 100%;
+  position: relative;
+}
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.button {
+  width: 90%;
+  /* background-color: red; */
+  position: absolute;
+  bottom: 100rpx;
+  left: 5%;
+  transform: translate(0, -50%);
+}
+.dialog-btn{
+  bottom: 60rpx;
+}
+#btn,#confirm{
+  /* display: block; */
+  width: 100%;
+  height: 88rpx;
+  /* margin: 0 auto; */
+  /* display: flex; */
+  background: gray;
+  opacity: 1;
+  border-radius: 40rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 88rpx;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0 !important;
+}
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+.bottom-dialog-body {
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 660rpx;
+  background-color: #fff;
+}
+/*动画前初始位置*/
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.dialog-title{
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  line-height: 70rpx;
+  color: #041320;
+}
+.dialog-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 10rpx;
+  /* background: pink; */
+}
+.dialog-item{
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #F6F6F6;
+  opacity: 1;
+  border-radius: 34rpx;
+  margin: 20rpx 8rpx;
+  text-align: center;
+}
+.bg-blue{
+  background: gray;
+  color: #fff;
+}

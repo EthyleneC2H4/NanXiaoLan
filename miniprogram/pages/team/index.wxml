@@ -1,0 +1,17 @@
+<view class="MyNavigator">
+  <text>创建球队</text>
+</view>
+<view class="takePlace" style="height: 140rpx" ></view>
+
+<view class="team">
+	<view class="li" wx:for="{{list}}">
+		<image mode="aspectFill" src="{{item.img}}" />
+		<view class="div">
+			<view class="h3">{{item.name}}</view>
+			<view class="h4">{{item.idcard}}</view>
+			<view class="h5">{{item.member}}</view>
+		</view>
+	</view>
+	
+	<view class="button" bindtap="add">创建球队</view>
+</view>

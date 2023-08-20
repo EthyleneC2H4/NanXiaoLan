@@ -1,0 +1,71 @@
+view, scroll-view, block, input, button, text, image, video, canvas {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  color: inherit;
+  font-style: inherit;
+  line-height: inherit; }
+
+input {
+  width: 100%;
+  display: block;
+  height: 70rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 6rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  color: #555; }
+
+.button {
+  height: 70rpx;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background: #fa8c35;
+  font-size: 30rpx;
+  color: #fff;
+  border-radius: 6rpx; }
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .home > .h3 {
+    margin-bottom: 100rpx;
+    font-size: 30rpx;
+    color: #000; }
+  .home > image {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    border: 5rpx solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    margin-bottom: 30rpx; }
+  .home .button {
+    margin-top: 100rpx;
+    width: 700rpx;
+    background: #fa8c35;
+    color: #fff;
+    font-size: 30rpx;
+    border-radius: 10rpx;
+    height: 70rpx; }
+    .MyNavigator{
+      height: 140rpx;
+      background-color: #fa8c35;
+      text-align: center;
+      line-height: 180rpx;
+      font-size: 34rpx;
+      font-weight: 550;
+      border: solid 2rpx #a9a9ad;
+    }

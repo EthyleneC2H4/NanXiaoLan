@@ -1,0 +1,143 @@
+view,scroll-view,block,input,button,text,image,video,canvas{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: inherit;
+	color: inherit;
+	font-style: inherit;
+	line-height: inherit;
+}
+
+@mixin n-row1 {
+	display: flex;
+	align-items: center;
+}
+
+@mixin n-row2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin n-row3 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+@mixin n-row4 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@mixin n-row5 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin n-col1 {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin n-col2 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@mixin n-col3 {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+@mixin n-col4 {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+@mixin n-col5 {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+// 绝对定位布局
+@mixin n-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+$c:#fa8c35;
+
+
+
+
+
+
+input{
+	width: 100%;
+	display: block;
+	height: 70rpx;
+	border: 2rpx solid #ddd;
+	border-radius: 6rpx;
+	padding: 0 20rpx;
+	font-size: 30rpx;
+	color: #555;
+}
+.button{
+	height: 70rpx;
+	display: block;
+	width: 100%;
+	@include n-row2;
+	border: 0;
+	background: $c;
+	font-size: 30rpx;
+	color: #fff;
+	border-radius: 6rpx;
+}
+
+
+.loginWx{
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	@include n-col2;
+	align-items: center;
+	>.h3{
+		margin-bottom: 100rpx;
+		font-size: 30rpx;
+		color: #000;
+	}
+	>.i{
+		width: 200rpx;
+		height: 200rpx;
+		border-radius: 50%;
+		border: 5rpx solid #ccc;
+		font-size: 100rpx;
+		@include n-row2;
+		color: #aaa;
+		margin-bottom: 30rpx;
+	}
+	
+	.button{
+		margin-bottom: 30rpx;
+		width: 700rpx;
+		&+.button{
+			background: #fff;
+			border: 2rpx solid $c;
+			color: $c;
+			
+		}
+	}
+}
+
+
+
+
+
